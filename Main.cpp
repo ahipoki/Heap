@@ -19,5 +19,6 @@ int main()
   inFile.close();
   cout<<"\n  5"<<endl;
   cout<<" / \\"<<endl;
-  cout<<"5   5"<<endl;
+  cout<<"\n 5   5"<<endl;
+  cout<<"/     \\"<<endl;
 }
