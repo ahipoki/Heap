@@ -6,19 +6,15 @@ using namespace std;
 
 int main()
 {
-  int array[100];
-  int len = sizeof(array)/sizeof(array[0]);
-  cout<<len<<endl;
   ifstream inFile;
   int heap [100] = { 0 };
+  int len = sizeof(heap)/sizeof(heap[0]);
   inFile.open("myFile");
-  for (int i = 0; i < 100; i++){
+  for (int i = 0; i < len; i++){
     inFile >> heap[i];
-    //cout<<heap[i]<<endl;
+    cout<<heap[i]<<" ";
   }
+  cout<<endl;
   inFile.close();
-  cout<<"\n  5"<<endl;
-  cout<<" / \\"<<endl;
-  cout<<"\n 5   5"<<endl;
-  cout<<"/     \\"<<endl;
+  return 0;
 }
