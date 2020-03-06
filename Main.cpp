@@ -130,9 +130,9 @@ void printTree(int heap[], int len, int depth, int ind){//Print tree function
   for (int i = 0; i < depth; i++){
     cout<<"      ";
     //Print spaces
-    //Print heap value
   }
   cout<<heap[ind]<<endl;
+  //Print heap value
   if (ind*2+2 < len){
     printTree(heap, len, depth+1, ind*2+2);
     //Recursively call print tree function
