@@ -128,6 +128,7 @@ void sort(int heap[], int len){//Sort function
 }
 
 void printTree(int heap[], int len, int depth, int ind){//Print tree function
+  //Got help with print function from Jason
   if (ind*2+1 < len){
     printTree(heap, len, depth+1, ind*2+1);
     //Recursively call print tree function
